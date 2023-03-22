@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #wrapperDiv{
+            height:  200px;
+            width: 400px;
+            border: 1px solid red;
+            margin: auto;
+            padding: 40px;
+        }
+        #wrapperleftright{
+            height:  83px;
+            width: 400px;
+            border: 5px solid red;
+            margin: auto;
+            margin-bottom: 20px;
+            padding: 4px;
+        }
+        #left{
+            width: 220px;
+            float:left;
+            border:1px solid black;
+            padding: 4px 4px 0px;
+            background-color: red;
+            color: white;
+        }
+        #left form input{
+            margin-bottom: 4px;
+        }
+        #right{
+            width: 160px;
+            float:right;
+            border:1px solid green;
+            padding-left:4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>OVERSKRIFT!!!</h1>
+        <p>Bøllebob svampe hovede</p>
+    <h2>Basse</h2>
+
+
+    <div id="wrapperleftright">
+        <div id="left">
+            <form action="/personData" method="post">
+
+                <label>First name</label>
+                <input type="text" name="firstName" placeholder="First name">
+
+                <label>Last name</label>
+                <input type="text" name="lastName" placeholder="Last name">
+
+                <input type="submit" value="Send data" style="background-color: white">
+            </form>
+        </div>
+
+        <div id="right">
+            <input type="checkbox" name="Vehicle 1" value="Bike">I have a bike!<br>
+            <input type="checkbox" name="Vehicle 2" value="Car">I have a car!<br>
+            <input type="checkbox" name="Vehicle 3" value="Ship" checked="checked">I have a ship!<br>
+        </div>
+    </div>
+
+    <div id="wrapperDiv">
+    <button>Tryk her hvis du er en idiot</button>
+        <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+        </select>
+    </div>
+</body>
+</html>
